@@ -115,6 +115,10 @@ a {
 .grid-two-cols {
     grid-template-columns: repeat(2, 1fr);
 }
+.grid-three--cols{
+    grid-template-columns: repeat(3, 1fr);
+
+}
 
 /* reusable */
 
@@ -136,7 +140,20 @@ a {
     width: 100%;
     height: auto;
 }
+.section-common-heading{
+font-size: 3rem;
+}
+.section-common-subheading{
+color: var(--heading-color);
+}
+.common-title{
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
+.section-common-para{
+    font-size: 1.3rem;
 
+}
 /* start hero section */
 main {
     position: relative;
@@ -198,5 +215,29 @@ main {
 }
 
 
-
 /* end hero section */
+
+
+/* about-section */
+
+
+.icon img{
+    padding: 2rem;
+    background-color: var(--supporting-color);
+    width: 12rem;
+    height: auto;
+    border-radius: 50%;
+    transition: all .7s linear;
+}
+.icon:hover img{
+    transform: rotate(360deg);
+    background: linear-gradient(to right, #0575e6, #021b79);
+}
+.about-div{
+    text-align: center;
+}
+.section-about .grid{
+    gap: 6.4rem;
+}
+
+/* end about-section */
