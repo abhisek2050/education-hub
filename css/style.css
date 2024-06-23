@@ -115,9 +115,13 @@ a {
 .grid-two-cols {
     grid-template-columns: repeat(2, 1fr);
 }
-.grid-three--cols{
-    grid-template-columns: repeat(3, 1fr);
 
+.grid-three--cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-four--cols {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 /* reusable */
@@ -140,20 +144,33 @@ a {
     width: 100%;
     height: auto;
 }
-.section-common-heading{
-font-size: 3rem;
+
+.section-common-heading {
+    font-size: 3rem;
 }
-.section-common-subheading{
-color: var(--heading-color);
+
+.section-common-subheading {
+    color: var(--heading-color);
 }
-.common-title{
+
+.common-title {
     font-size: 2rem;
     margin: 2.4rem 0 1.2rem 0;
 }
-.section-common-para{
+
+.section-common-para {
     font-size: 1.3rem;
 
 }
+
+.fa-solid {
+    font-size: 2.4rem;
+    background: var(--supporting-color);
+    padding: 2.2rem;
+    border-radius: 50%;
+    color: var(--hero-heading-color);
+}
+
 /* start hero section */
 main {
     position: relative;
@@ -221,7 +238,7 @@ main {
 /* about-section */
 
 
-.icon img{
+.icon img {
     padding: 2rem;
     background-color: var(--supporting-color);
     width: 12rem;
@@ -229,15 +246,65 @@ main {
     border-radius: 50%;
     transition: all .7s linear;
 }
-.icon:hover img{
+
+.icon:hover img {
     transform: rotate(360deg);
     background: linear-gradient(to right, #0575e6, #021b79);
 }
-.about-div{
+
+.about-div {
     text-align: center;
 }
-.section-about .grid{
+
+.section-about .grid {
     gap: 6.4rem;
 }
 
 /* end about-section */
+
+/* start course section */
+
+
+.section-course .grid {
+    gap: 3.2rem;
+}
+
+.section-course .course-div {
+    padding: 3.2rem;
+}
+
+.course-div:hover {
+    box-shadow: var(--btn-box-shadow);
+}
+
+.course-div:nth-child(2) .icon .fa-solid {
+    color: #183d3d;
+    background-color: #ccf7f7;
+}
+
+.course-div:nth-child(3) .icon .fa-solid {
+    color: #d988b9;
+    background-color: rgb(247, 233, 238);
+}
+
+.course-div:nth-child(4) .icon .fa-solid {
+    color: #ff9b50;
+    background-color: #f6dfce;
+}
+
+.course-div:nth-child(5) .icon .fa-solid {
+    color: #1450a3;
+    background-color: #dce9fa;
+}
+
+.course-div:nth-child(6) .icon .fa-solid {
+    color: #183d3d;
+    background-color: #ccf7f7;
+}
+
+.course-div:nth-child(7) .icon .fa-solid {
+    color: #d988b9;
+    background-color: rgb(247, 233, 238);
+}
+
+/* end course section */
