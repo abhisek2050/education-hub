@@ -57,7 +57,7 @@ a {
 .container {
     max-width: 126rem;
     margin: 0 auto;
-    padding: 9.6rem 2.4rem;
+    padding: 6.6rem 2.4rem;
 }
 
 .navbar-brand a img {
@@ -241,7 +241,7 @@ main {
 .icon img {
     padding: 2rem;
     background-color: var(--supporting-color);
-    width: 12rem;
+    width: 13rem;
     height: auto;
     border-radius: 50%;
     transition: all .7s linear;
@@ -264,6 +264,9 @@ main {
 
 /* start course section */
 
+.section-course{
+    background: #f7fcff;
+}
 
 .section-course .grid {
     gap: 3.2rem;
