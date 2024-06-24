@@ -311,3 +311,53 @@ main {
 }
 
 /* end course section */
+
+/* start why-choose-section */
+
+.common-num-circle{
+    font-size: 2.2rem;
+    background: var(--supporting-color);
+    color: var(--main-color);
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side-div .why-choose--div{
+    margin-top: 3rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: right;
+}
+.right-side-div .why-choose--div{
+    margin-top: 3rem ;
+}
+.choose-center--div figure img{
+    width: 80%;
+    height: auto;
+}
+.choose-center--div ,figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.choose-center--div::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--supporting-color);
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+}
+.section-why--choose .grid{
+    gap: 8.4rem;
+}
+/* end why-choose-section */
