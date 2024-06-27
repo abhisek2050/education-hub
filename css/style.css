@@ -28,7 +28,8 @@ h6 {
 
 p,
 li,
-a {
+a,
+label {
     font-family: "Grenze", serif;
     font-size: 1.6rem;
     letter-spacing: 0.2rem;
@@ -69,7 +70,7 @@ a {
 .section-navbar {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 24px 0px,
-        rgba(0, 0, 0, 0.8) 0px 0px 0px 1px;
+        rgba(0, 0, 0, 0.8) 0px 0px 0px 0px;
 }
 
 .section-navbar .container {
@@ -108,6 +109,10 @@ a {
     }
 
 }
+
+/* :is(.section-about, .section-blog, .section-card, .section-contact, .section-course, .section-why--choose).container:first-child {
+    padding:6.4rem 0 2.4rem 0 ;
+} */
 
 .grid {
     display: grid;
@@ -430,6 +435,97 @@ figure {
 
 /* end card section */
 
+
+/* start section blog */
+.section-blog {
+    background-color: var(--bg-color);
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    & .grid {
+        gap: 6.4rem;
+    }
+
+    & .container:nth-child(1) {
+        padding: 6.6rem 2.4rem 2rem;
+    }
+
+    & .blog {
+        box-shadow: var(--btn-box-shadow);
+        transition: transform .7s ease;
+
+        & .blog-content {
+            padding: 1.2rem 2.2rem 2.2rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    & .blog-date {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.3rem;
+
+        & .fa-solid {
+            background-color: transparent;
+            padding: 0;
+            font-size: 1.8rem;
+        }
+    }
+
+    & .section-common-title {
+        margin-top: 0.8rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* end section blog */
+/* start section-contact */
+.section-contact .grid {
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.mb {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    text-transform: capitalize;
+}
+
+/* .contact-content .grid {
+    gap: 4.4rem;
+} */
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+::placeholder {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.btn-submit {
+    font-size: 1.4rem;
+    border: none;
+    text-transform: capitalize;
+}
+
+/* end section-contact */
+
 /* start footer section */
 .section-footer {
     background-color: var(--footer-bg-color);
@@ -474,7 +570,8 @@ figure {
 .footer-3--div,
 .footer-4--div {
     text-align: center;
-    & a:hover{
+
+    & a:hover {
         color: var(--btn-hover-bg-color);
         transition: all .3s ease;
     }
@@ -488,11 +585,7 @@ figure {
 
 .social-footer-icons a {
     font-size: 2.6rem;
-
-    &:nth-child(2),
-    &:nth-child(3) {
-        padding-left: 2rem;
-    }
+    letter-spacing: 0;
 }
 
 /* end footer section */
