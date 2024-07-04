@@ -90,7 +90,7 @@ label {
         text-transform: uppercase;
         font-weight: 600;
         display: inline-block;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         position: relative;
 
         &::after {
@@ -489,6 +489,10 @@ figure {
 .section-contact .grid {
     align-items: center;
     gap: 3.2rem;
+
+    &.container:nth-child(2) {
+        padding: 2.4rem;
+    }
 }
 
 .mb {
@@ -499,10 +503,6 @@ label {
     display: block;
     text-transform: capitalize;
 }
-
-/* .contact-content .grid {
-    gap: 4.4rem;
-} */
 
 input,
 textarea {
@@ -530,7 +530,12 @@ textarea {
 .section-footer {
     background-color: var(--footer-bg-color);
     padding-top: 20rem;
+
+    &.pt {
+        padding-top: 2rem;
+    }
 }
+
 
 .section-footer * {
     color: var(--white-color);
@@ -581,6 +586,10 @@ textarea {
     margin: 3.6rem 0;
     display: flex;
     gap: 2.2rem;
+
+    &.mb {
+        margin-bottom: 1.6rem;
+    }
 }
 
 .social-footer-icons a {
