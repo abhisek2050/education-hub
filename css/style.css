@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
 
 
 * {
@@ -8,7 +6,8 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Playfair", serif;
     font-weight: 700;
 
 }
@@ -30,9 +29,9 @@ p,
 li,
 a,
 label {
-    font-family: "Grenze", serif;
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
+    font-family: "Playfair", serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
     font-weight: 700;
     color: var(--para-color);
     line-height: 2;
@@ -88,9 +87,9 @@ label {
     & li a {
         color: var(--heading-color);
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 700;
         display: inline-block;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         position: relative;
 
         &::after {
@@ -111,7 +110,10 @@ label {
 }
 
 /* :is(.section-about, .section-blog, .section-card, .section-contact, .section-course, .section-why--choose).container:first-child {
-    padding:6.4rem 0 2.4rem 0 ;
+    padding:4.6rem 3.2rem ;
+}
+:is(.section-about, .section-blog, .section-card, .section-contact, .section-course, .section-why--choose).container:nth-child(2) {
+    padding:3.6rem 2.4rem ;
 } */
 
 .grid {
@@ -152,7 +154,7 @@ label {
 }
 
 .section-common-heading {
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .section-common-subheading {
@@ -160,12 +162,14 @@ label {
 }
 
 .common-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 2.4rem 0 1.2rem 0;
+    font-weight: 700;
 }
 
 .section-common-para {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
 }
 
 .fa-solid {
@@ -217,14 +221,14 @@ main {
 .hero-subheading {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     word-spacing: 0.2rem;
     font-weight: 700;
     color: var(--hero-heading-color);
 }
 
 .hero-heading {
-    font-size: 4.4rem;
+    font-size: 4.8rem;
     text-transform: capitalize;
     font-family: "Piazzolla", serif;
     color: var(--heading-color);
@@ -262,6 +266,9 @@ main {
 
 .about-div {
     text-align: center;
+    & .common-title{
+        font-weight: 500;
+    }
 }
 
 .section-about .grid {
@@ -286,6 +293,9 @@ main {
 
 .section-course .course-div {
     padding: 3.2rem;
+    & .common-title{
+        font-weight: 500;
+    }
 }
 
 .course-div:hover {
@@ -329,9 +339,15 @@ main {
 .section-why--choose .container:nth-child(2) {
     padding: 3.6rem 3.2rem;
 }
-
+.section-why--choose{
+    & .why-choose--div{
+        & .common-title{
+            font-weight:800 ;
+        }
+    }
+}
 .common-num-circle {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
     background: var(--supporting-color);
     color: var(--main-color);
     width: 5rem;
@@ -493,16 +509,20 @@ figure {
     &.container:nth-child(2) {
         padding: 2.4rem;
     }
+    & form{
+        & label {
+            display: block;
+            text-transform: capitalize;
+            font-size: 2rem;
+        }
+    }
 }
+
 
 .mb {
     margin-bottom: 2rem;
 }
 
-label {
-    display: block;
-    text-transform: capitalize;
-}
 
 input,
 textarea {
@@ -514,12 +534,12 @@ textarea {
 }
 
 ::placeholder {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     letter-spacing: 0.1rem;
 }
 
 .btn-submit {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     border: none;
     text-transform: capitalize;
 }
@@ -617,6 +637,9 @@ textarea {
 
     .section-hero {
         padding-bottom: 4rem;
+    }
+    .container{
+        padding:3.6rem 2.4rem ;
     }
 }
 
@@ -770,6 +793,7 @@ textarea {
 
     .section-about .about-div {
         text-align: left;
+    
     }
 
     .section-why--choose {
