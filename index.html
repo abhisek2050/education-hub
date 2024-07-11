@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -66,7 +67,7 @@
                         <a href="service.html" class="btn btn-white">learn with us</a>
                     </div>
                 </div>
-                <div class="section-hero-image">
+                <div class="section-hero-image" data-aos="fade-up" data-aos-duration="6000">
                     <figure>
                         <img src="./images/hero-img.png" alt="image-error-occured" title="Abhi~Education">
                     </figure>
@@ -98,7 +99,7 @@
                 Design and development Excellence.</p>
         </div>
         <div class="container grid grid-three--cols">
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" data-aos-delay="100">
                 <div class="icon">
                     <img src="images/research.webp" alt="research img">
                 </div>
@@ -108,7 +109,7 @@
                     that match what you want to learn. </p>
             </div>
 
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon">
                     <img src="images/design.webp" alt="design img">
                 </div>
@@ -119,7 +120,7 @@
                 </p>
             </div>
 
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon">
                     <img src="images/developement.webp" alt="development img">
                 </div>
@@ -200,7 +201,7 @@
                 that empowers you to achieve your goals.</p>
         </div>
         <div class="container grid grid-three--cols">
-            <div class="left-side-div">
+            <div class="left-side-div" data-aos="zoom-in-up" data-aos-delay="200">
                 <div class="why-choose--div">
                     <p class="common-num-circle">1</p>
                     <div class="common-title">Expert Instructors</div>
@@ -222,12 +223,12 @@
                         the job market and this is significantly contribute to your career.</p>
                 </div>
             </div>
-            <div class="choose-center--div">
+            <div class="choose-center--div" data-aos="fade-in">
                 <figure>
                     <img src="images/mobiles.jpg" alt="center-div-image">
                 </figure>
             </div>
-            <div class="right-side-div">
+            <div class="right-side-div" data-aos="zoom-in-up" data-aos-delay="400">
                 <div class="why-choose--div">
                     <p class="common-num-circle">4</p>
                     <div class="common-title">Improving Self-Discipline </div>
@@ -324,6 +325,10 @@
     </footer>
     <!-- end footer section -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
